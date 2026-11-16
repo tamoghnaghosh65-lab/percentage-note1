@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Percentage Tricks for Competitive Exams</title>
+<style>
+:root{--blue:#1769aa;--navy:#12304a;--light:#eef6ff;--green:#16794b;--red:#b42318;--ink:#1f2937}
+*{box-sizing:border-box}
+body{margin:0;background:#f3f6fa;color:var(--ink);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+header{background:linear-gradient(135deg,#12304a,#1769aa);color:white;padding:28px 16px;text-align:center}
+header h1{margin:0 0 8px;font-size:clamp(1.5rem,5vw,2.5rem)}
+header p{margin:0;opacity:.9}
+main{max-width:900px;margin:22px auto;padding:0 14px 40px}
+section,.quiz{background:white;border-radius:14px;padding:20px;margin:16px 0;box-shadow:0 3px 14px #0b254014}
+h2{color:var(--navy);font-size:1.25rem;margin:0 0 12px}
+h3{color:var(--blue);font-size:1.05rem;margin:18px 0 8px}
+table{border-collapse:collapse;width:100%;margin:10px 0;display:block;overflow-x:auto}
+th,td{border:1px solid #d7e0ea;padding:9px 11px;text-align:left;white-space:nowrap}
+th{background:var(--light);color:var(--navy)}
+.formula{background:#eef6ff;border-left:4px solid var(--blue);padding:12px 14px;border-radius:8px;font-weight:650;margin:10px 0}
+.example{background:#f8fafc;padding:12px 14px;border-radius:8px;margin:10px 0}
+.tag{display:inline-block;background:#e5f5ec;color:#146c43;padding:3px 9px;border-radius:99px;font-size:.82rem;font-weight:700}
+ul{padding-left:22px}
+.question{padding:15px 0;border-bottom:1px solid #e5eaf0}
+.question:last-child{border-bottom:0}
+.question p{font-weight:650;margin:0 0 8px}
+label.option{display:block;padding:5px 8px;border-radius:6px;cursor:pointer}
+label.option:hover{background:#f1f6fb}
+button{border:0;border-radius:9px;padding:11px 16px;font-weight:700;cursor:pointer;background:var(--blue);color:#fff;font-size:1rem}
+button.secondary{background:#e8eef5;color:var(--navy)}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:15px}
+#result{font-weight:750;margin-top:14px}
+.correct{color:var(--green)}.wrong{color:var(--red)}
+.explanation{display:none;background:#f8fafc;padding:9px 12px;border-radius:7px;margin-top:8px;font-size:.94rem}
+footer{text-align:center;color:#64748b;padding:20px}
+@media(max-width:560px){section,.quiz{padding:15px}th,td{padding:8px;font-size:.92rem}}
+</style>
+</head>
+<body>
+<header>
+<h1>Percentage Tricks for Competitive Exams</h1>
+<p>WBCS • WBPSC • SSC • Banking • Railway</p>
+<p>Quick calculations, formulas, examples and a mini quiz</p>
+</header>
+<main>
+<section>
+<h2>1. Percentage–Fraction Conversion Table</h2>
+<span class="tag">Must Memorise</span>
+<table>
+<thead><tr><th>Percentage</th><th>Fraction</th></tr></thead>
+<tbody>
+<tr><td>1%</td><td>1/100</td></tr><tr><td>2%</td><td>1/50</td></tr><tr><td>4%</td><td>1/25</td></tr>
+<tr><td>5%</td><td>1/20</td></tr><tr><td>6.25%</td><td>1/16</td></tr><tr><td>8%</td><td>2/25</td></tr>
+<tr><td>10%</td><td>1/10</td></tr><tr><td>12.5%</td><td>1/8</td></tr><tr><td>16.67% (approx.)</td><td>1/6</td></tr>
+<tr><td>20%</td><td>1/5</td></tr><tr><td>25%</td><td>1/4</td></tr><tr><td>30%</td><td>3/10</td></tr>
+<tr><td>33.33% (approx.)</td><td>1/3</td></tr><tr><td>37.5%</td><td>3/8</td></tr><tr><td>40%</td><td>2/5</td></tr>
+<tr><td>50%</td><td>1/2</td></tr><tr><td>62.5%</td><td>5/8</td></tr><tr><td>66.67% (approx.)</td><td>2/3</td></tr>
+<tr><td>75%</td><td>3/4</td></tr><tr><td>80%</td><td>4/5</td></tr><tr><td>87.5%</td><td>7/8</td></tr><tr><td>100%</td><td>1</td></tr>
+</tbody></table>
+<div class="example"><b>Example:</b> Find 37.5% of 640.<br>37.5% = 3/8, so 640 × 3/8 = 80 × 3 = <b>240</b>.</div>
+<p>Fraction conversion is one of the biggest calculation shortcuts.</p>
+</section>
+
+<section>
+<h2>2. The Golden Percentage Trick</h2>
+<div class="formula">x% of y = y% of x</div>
+<div class="example"><b>Example:</b> 16% of 25 = 25% of 16 = 16 × 1/4 = <b>4</b>.</div>
+<table><thead><tr><th>Problem</th><th>Reverse trick</th><th>Answer</th></tr></thead><tbody>
+<tr><td>25% of 48</td><td>48% of 25</td><td>12</td></tr>
+<tr><td>40% of 75</td><td>75% of 40</td><td>30</td></tr>
+<tr><td>32% of 25</td><td>25% of 32</td><td>8</td></tr>
+<tr><td>12% of 50</td><td>50% of 12</td><td>6</td></tr>
+</tbody></table>
+</section>
+
+<section>
+<h2>3. Successive Percentage Change Trick</h2>
+<div class="formula">Two increases: Net change = a + b + (ab/100)%</div>
+<div class="example"><b>Example:</b> Increase by 20%, then 10%.<br>20 + 10 + (20 × 10)/100 = <b>32% increase</b>.</div>
+<div class="formula">Increase a%, then decrease b%: Net change = a − b − (ab/100)%</div>
+<div class="example"><b>Example:</b> +20%, then −10%.<br>20 − 10 − 2 = <b>8% increase</b>.</div>
+<div class="example"><b>Important:</b> +20% followed by −20% is not zero.<br>20 − 20 − 4 = <b>4% decrease</b>.</div>
+</section>
+
+<section>
+<h2>4. Reverse Percentage Trick</h2>
+<div class="example">If a value increases by 25%, it becomes 125% of its original value. The decrease needed to return to the original is 25/125 × 100 = <b>20%</b>.</div>
+<table><thead><tr><th>Increase</th><th>Decrease needed to return</th></tr></thead><tbody>
+<tr><td>10%</td><td>9.09%</td></tr><tr><td>20%</td><td>16.67%</td></tr><tr><td>25%</td><td>20%</td></tr>
+<tr><td>30%</td><td>23.08%</td></tr><tr><td>40%</td><td>28.57%</td></tr><tr><td>50%</td><td>33.33%</td></tr><tr><td>100%</td><td>50%</td></tr>
+</tbody></table>
+<div class="formula">Required decrease after increase of x% = x/(100 + x) × 100</div>
+<div class="formula">Required increase after decrease of x% = x/(100 − x) × 100</div>
+</section>
+
+<section>
+<h2>5. Expenditure–Consumption Trick</h2>
+<div class="formula">Price rises by x% → consumption decrease = x/(100 + x) × 100</div>
+<div class="example"><b>Example:</b> Price rises by 25%.<br>25/125 × 100 = <b>20% consumption decrease</b> to keep expenditure constant.</div>
+<div class="example"><b>Reverse:</b> Price falls by 20%.<br>Consumption can increase by 20/80 × 100 = <b>25%</b>.</div>
+</section>
+
+<section>
+<h2>6. Base Value Trick</h2>
+<p>When the original value is unknown, assume it is 100. Convert the percentage change into a new value, then scale it.</p>
+<div class="example"><b>Example:</b> A number increases by 30% and becomes 260. Find the original.<br>Assume original = 100 → new value = 130.<br>130 corresponds to 260, so original = 260 × 100/130 = <b>200</b>.</div>
+</section>
+
+<section>
+<h2>7. Population / Salary / Price Questions</h2>
+<p>For repeated growth, multiply the growth factors.</p>
+<div class="formula">Final value = Initial value × (1 + r/100)<sup>n</sup></div>
+<div class="example"><b>Example:</b> Population = 20,000; annual growth = 10%; period = 2 years.<br>20,000 × 1.1 × 1.1 = 20,000 × 1.21 = <b>24,200</b>.</div>
+</section>
+
+<section>
+<h2>8. Marks Percentage Trick</h2>
+<div class="example"><b>Example:</b> A student scores 35% and fails by 20 marks. Another scores 45% and gets 20 marks more than passing marks. Find total marks.<br>Score difference = 45% − 35% = 10%.<br>Marks difference = 20 + 20 = 40.<br>Thus 10% = 40 → 100% = <b>400 marks</b>.</div>
+</section>
+
+<section>
+<h2>9. Quick Mental Calculation Tricks</h2>
+<table><thead><tr><th>Calculation</th><th>Shortcut</th><th>Answer</th></tr></thead><tbody>
+<tr><td>15% of 240</td><td>10% + 5% = 24 + 12</td><td>36</td></tr>
+<tr><td>35% of 80</td><td>30% + 5% = 24 + 4</td><td>28</td></tr>
+<tr><td>125% of 64</td><td>100% + 25% = 64 + 16</td><td>80</td></tr>
+<tr><td>99% of 450</td><td>450 − 1% (4.5)</td><td>445.5</td></tr>
+<tr><td>101% of 600</td><td>600 + 1% (6)</td><td>606</td></tr>
+<tr><td>75% of 160</td><td>3/4 × 160</td><td>120</td></tr>
+</tbody></table>
+</section>
+
+<div class="quiz">
+<h2>10. Practice Test — 5 Questions</h2>
+<p>Try solving without a calculator. Select one answer for each question.</p>
+<form id="quizForm">
+<div class="question" data-answer="1" data-explanation="1.25 × 0.80 = 1.00. There is no net change.">
+<p>Q1. A number increases by 25% and then decreases by 20%. Net change?</p>
+<label class="option"><input type="radio" name="q0" value="0"> A. 4% increase</label>
+<label class="option"><input type="radio" name="q0" value="1"> B. No change</label>
+<label class="option"><input type="radio" name="q0" value="2"> C. 5% decrease</label>
+<label class="option"><input type="radio" name="q0" value="3"> D. 2% increase</label>
+<div class="explanation"></div></div>
+<div class="question" data-answer="2" data-explanation="40% = 2/5. Therefore 250 × 2/5 = 100.">
+<p>Q2. 40% of 250 = ?</p>
+<label class="option"><input type="radio" name="q1" value="0"> A. 80</label><label class="option"><input type="radio" name="q1" value="1"> B. 90</label>
+<label class="option"><input type="radio" name="q1" value="2"> C. 100</label><label class="option"><input type="radio" name="q1" value="3"> D. 120</label><div class="explanation"></div></div>
+<div class="question" data-answer="1" data-explanation="20/120 × 100 = 16.67%.">
+<p>Q3. Price increases by 20%. Consumption must decrease by how much to keep expenditure constant?</p>
+<label class="option"><input type="radio" name="q2" value="0"> A. 20%</label><label class="option"><input type="radio" name="q2" value="1"> B. 16.67%</label>
+<label class="option"><input type="radio" name="q2" value="2"> C. 25%</label><label class="option"><input type="radio" name="q2" value="3"> D. 15%</label><div class="explanation"></div></div>
+<div class="question" data-answer="0" data-explanation="60% − 50% = 10%; 10% = 30 marks, so total = 300 marks.">
+<p>Q4. A student scores 60% and gets 30 marks more than passing marks. If passing is 50%, total marks?</p>
+<label class="option"><input type="radio" name="q3" value="0"> A. 300</label><label class="option"><input type="radio" name="q3" value="1"> B. 200</label>
+<label class="option"><input type="radio" name="q3" value="2"> C. 150</label><label class="option"><input type="radio" name="q3" value="3"> D. 100</label><div class="explanation"></div></div>
+<div class="question" data-answer="1" data-explanation="20/80 × 100 = 25%.">
+<p>Q5. A salary decreases by 20%. What percentage increase restores it?</p>
+<label class="option"><input type="radio" name="q4" value="0"> A. 20%</label><label class="option"><input type="radio" name="q4" value="1"> B. 25%</label>
+<label class="option"><input type="radio" name="q4" value="2"> C. 30%</label><label class="option"><input type="radio" name="q4" value="3"> D. 16.67%</label><div class="explanation"></div></div>
+<div class="actions"><button type="button" onclick="gradeQuiz()">Submit Answers</button><button type="button" class="secondary" onclick="resetQuiz()">Try Again</button></div>
+<div id="result" aria-live="polite"></div>
+</form>
+</div>
+
+<section>
+<h2>Suggested Learning Path</h2>
+<ol>
+<li>Fraction tricks</li><li>Percentage change</li><li>Reverse percentage</li><li>Population and salary</li>
+<li>Income–expenditure–savings</li><li>Election and marks problems</li><li>Advanced exam-level shortcuts</li>
+</ol>
+</section>
+</main>
+<footer>Percentage Tricks • Competitive Exam Study Notes</footer>
+<script>
+function gradeQuiz(){
+ const qs=[...document.querySelectorAll('.question')];let score=0,attempted=0;
+ qs.forEach((q,i)=>{const chosen=document.querySelector('input[name="q'+i+'"]:checked');const exp=q.querySelector('.explanation');exp.style.display='block';exp.textContent='Explanation: '+q.dataset.explanation;
+ q.querySelectorAll('label.option').forEach(l=>l.classList.remove('correct','wrong'));
+ if(chosen){attempted++;if(chosen.value===q.dataset.answer){score++;chosen.closest('label').classList.add('correct')}else{chosen.closest('label').classList.add('wrong');q.querySelector('input[value="'+q.dataset.answer+'"]').closest('label').classList.add('correct')}}
+ else{q.querySelector('input[value="'+q.dataset.answer+'"]').closest('label').classList.add('correct')}
+ });
+ document.getElementById('result').textContent='Your score: '+score+' / '+qs.length+' (Attempted: '+attempted+')';
+}
+function resetQuiz(){document.getElementById('quizForm').reset();document.querySelectorAll('.explanation').forEach(e=>{e.style.display='none';e.textContent=''});document.querySelectorAll('label.option').forEach(l=>l.classList.remove('correct','wrong'));document.getElementById('result').textContent='';}
+</script>
+</body>
+</html>
